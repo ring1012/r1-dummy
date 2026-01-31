@@ -1,0 +1,86 @@
+package nluparser.scheme;
+
+/* loaded from: classes.dex */
+public final class SCode {
+    public static final String ALARM_CANCEL = "ALARM_CANCEL";
+    public static final String ALARM_REMOVE = "ALARM_REMOVE";
+    public static final String ALARM_REMOVE_ALL = "ALARM_REMOVE_ALL";
+    public static final String ALARM_SET = "ALARM_SET";
+    public static final String ALARM_SET_TIMING = "ALARM_SET_TIMING";
+    public static final String ALARM_STOP = "ALARM_STOP";
+    public static final String ANSWER = "ANSWER";
+    public static final String APP_DOWNLOAD = "APP_DOWNLOAD";
+    public static final String APP_EXIT = "APP_EXIT";
+    public static final String APP_INSTALL = "APP_INSTALL";
+    public static final String APP_LAUNCH = "APP_LAUNCH";
+    public static final String APP_SEARCH = "APP_SEARCH";
+    public static final String APP_UNINSTALL = "APP_UNINSTALL";
+    public static final String BUSINESS_SEARCH = "BUSINESS_SEARCH";
+    public static final String CALL = "CALL";
+    public static final String CALL_THROUGH = "CALL_THROUGH";
+    public static final String CHAT_STYLE_BAIKE = "baike";
+    public static final String CHAT_STYLE_JOKE = "joke";
+    public static final String CHAT_STYLE_MAYBE_NOSIE = "maybe_noise";
+    public static final String CHAT_STYLE_POEM = "poem";
+    public static final String CHAT_STYLE_TRANSLATION = "translation";
+    public static final String CHAT_STYLE_UNKNOW = "unknown";
+    public static final String CHAT_STYLE_WAKEUP = "wakeup";
+    public static final String CONTACT_ADD = "CONTACT_ADD";
+    public static final String CONTACT_SEARCH = "CONTACT_SEARCH";
+    public static final String CONTACT_SEND = "CONTACT_SEND";
+    public static final String DEAL_SEARCH = "DEAL_SEARCH";
+    public static final String FINFO = "FINFO";
+    public static final String FONEWAY = "FONEWAY";
+    public static final String FORBIDEN_MIC = "FORBIDEN_MIC";
+    public static final String FORECAST = "FORECAST";
+    public static final String FTWOWAY = "FTWOWAY";
+    public static final String ILLEGAL_DIRTY = "ILLEGAL_DIRTY";
+    public static final String ILLEGAL_SENSITIVE = "ILLEGAL_SENSITIVE";
+    public static final String ILLEGAL_YELLOW = "ILLEGAL_YELLOW";
+    public static final String NONBUSINESS_SEARCH = "NONBUSINESS_SEARCH";
+    public static final String POSITION = "POSITION";
+    public static final String QUERY_AC = "QUERY_AC";
+    public static final String QUERY_ARTISTNAME = "QUERY_ARTISTNAME";
+    public static final String QUERY_NAME = "QUERY_NAME";
+    public static final String QUERY_SETTING = "QUERY_SETTING";
+    public static final String QUERY_SINGER = "QUERY_SINGER";
+    public static final String QUERY_SONGNAME = "QUERY_SONGNAME";
+    public static final String REDIAL = "REDIAL";
+    public static final String REMINDER_CANCEL = "REMINDER_CANCEL";
+    public static final String REMINDER_REMOVE = "REMINDER_REMOVE";
+    public static final String REMINDER_REMOVE_ALL = "REMINDER_REMOVE_ALL";
+    public static final String REMINDER_SET = "REMINDER_SET";
+    public static final String REPLY = "REPLY";
+    public static final String ROUTE = "ROUTE";
+    public static final String SCENE_MODE_OPERATE = "SCENE_MODE_OPERATE";
+    public static final String SEARCH = "SEARCH";
+    public static final String SEARCH_ALBUM = "SEARCH_ALBUM";
+    public static final String SEARCH_ARTIST = "SEARCH_ARTIST";
+    public static final String SEARCH_BILLBOARD = "SEARCH_BILLBOARD";
+    public static final String SEARCH_CATEGORY = "SEARCH_CATEGORY";
+    public static final String SEARCH_FM_SONG = "SEARCH_FM_SONG";
+    public static final String SEARCH_NAME = "SEARCH_NAME";
+    public static final String SEARCH_RANDOM = "SEARCH_RANDOM";
+    public static final String SEARCH_SONG = "SEARCH_SONG";
+    public static final String SEARCH_SONGLIST = "SEARCH_SONGLIST";
+    public static final String SEARCH_TAG = "SEARCH_TAG";
+    public static final String SETTING_EXEC = "SETTING_EXEC";
+    public static final String SETTING_EXEC_AC = "SETTING_EXEC_AC";
+    public static final String SETTING_EXEC_MP = "SETTING_EXEC_MP";
+    public static final String SETTING_EXEC_TV = "SETTING_EXEC_TV";
+    public static final String SETTING_IOT = "SETTING_IOT";
+    public static final String SMS_READ = "SMS_READ";
+    public static final String SMS_SEND = "SMS_SEND";
+    public static final String START_CONNECT_WIFI = "CONNECT_WIFI";
+    public static final String STOCK_INFO = "STOCK_INFO";
+    public static final String STOP_CONNECT_WIFI = "STOP_CONNECT_WIFI";
+    public static final String TRAFFIC_QUERY = "TRAFFIC_QUERY";
+    public static final String USER_COMMAND = "USER_COMMAND";
+    public static final String WAKEUP_WORD = "WAKEUP_WORD";
+    public static final String WAKEUP_WORD_ONESHOT = "WAKEUP_WORD_ONESHOT";
+    public static final String YP_CALL = "YP_CALL";
+    public static final String YP_SEARCH = "YP_SEARCH";
+
+    private SCode() {
+    }
+}

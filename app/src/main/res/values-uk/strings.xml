@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exo_controls_fastforward_description">Перемотати вперед</string>
+    <string name="exo_controls_next_description">Наступна композиція</string>
+    <string name="exo_controls_pause_description">Пауза</string>
+    <string name="exo_controls_play_description">Відтворити</string>
+    <string name="exo_controls_previous_description">Попередня композиція</string>
+    <string name="exo_controls_rewind_description">Перемотати назад</string>
+    <string name="exo_controls_stop_description">Зупинити</string>
+</resources>

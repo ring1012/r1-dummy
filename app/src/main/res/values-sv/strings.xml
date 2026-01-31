@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exo_controls_fastforward_description">Snabbspola framåt</string>
+    <string name="exo_controls_next_description">Nästa spår</string>
+    <string name="exo_controls_pause_description">Pausa</string>
+    <string name="exo_controls_play_description">Spela upp</string>
+    <string name="exo_controls_previous_description">Föregående spår</string>
+    <string name="exo_controls_rewind_description">Spola tillbaka</string>
+    <string name="exo_controls_stop_description">Avbryt</string>
+</resources>

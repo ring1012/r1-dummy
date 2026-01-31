@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exo_controls_fastforward_description">جلو بردن سریع</string>
+    <string name="exo_controls_next_description">آهنگ بعدی</string>
+    <string name="exo_controls_pause_description">مکث</string>
+    <string name="exo_controls_play_description">پخش</string>
+    <string name="exo_controls_previous_description">آهنگ قبلی</string>
+    <string name="exo_controls_rewind_description">عقب بردن</string>
+    <string name="exo_controls_stop_description">توقف</string>
+</resources>
