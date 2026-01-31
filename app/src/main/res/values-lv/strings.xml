@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exo_controls_fastforward_description">Ātri patīt</string>
+    <string name="exo_controls_next_description">Nākamais ieraksts</string>
+    <string name="exo_controls_pause_description">Pārtraukt</string>
+    <string name="exo_controls_play_description">Atskaņot</string>
+    <string name="exo_controls_previous_description">Iepriekšējais ieraksts</string>
+    <string name="exo_controls_rewind_description">Attīt atpakaļ</string>
+    <string name="exo_controls_stop_description">Apturēt</string>
+</resources>

@@ -4,7 +4,7 @@ import android.net.LocalSocket;
 import android.net.LocalSocketAddress;
 import android.os.Handler;
 import android.os.Message;
-import androidx.core.view.MotionEventCompat;
+import android.support.v4.view.MotionEventCompat;
 import com.unisound.vui.util.LogMgr;
 import java.io.InputStream;
 import java.nio.ByteBuffer;

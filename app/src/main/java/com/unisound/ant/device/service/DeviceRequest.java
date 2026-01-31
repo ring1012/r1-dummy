@@ -1,6 +1,6 @@
 package com.unisound.ant.device.service;
 
-import androidx.annotation.Nullable;
+import android.support.annotation.Nullable;
 import com.alibaba.fastjson.annotation.JSONField;
 import com.google.gson.annotations.SerializedName;
 import com.phicomm.speaker.device.custom.udid.DeviceIdProcessor;

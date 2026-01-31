@@ -2,7 +2,7 @@ package com.unisound.vui.handler.session.memo.entity;
 
 import android.content.ContentUris;
 import android.provider.MediaStore;
-import androidx.annotation.NonNull;
+import android.support.annotation.NonNull;
 import cn.yunzhisheng.common.PinyinConverter;
 import com.unisound.vui.handler.session.memo.utils.MemoConstants;
 import com.unisound.vui.handler.session.memo.utils.RingingUtils;

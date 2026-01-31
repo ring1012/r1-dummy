@@ -7,7 +7,7 @@ import android.os.Process;
 import android.text.TextUtils;
 import android.util.Log;
 
-import androidx.multidex.MultiDexApplication;
+import android.support.multidex.MultiDexApplication;
 import com.phicomm.speaker.device.custom.message.MessageSenderDelegate;
 import com.phicomm.speaker.device.custom.mqtt.PhicommMQTTStatausChange;
 import com.phicomm.speaker.device.custom.status.PhicommDeviceStatusProcessor;

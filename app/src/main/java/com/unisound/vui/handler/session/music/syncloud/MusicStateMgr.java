@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
-import androidx.annotation.NonNull;
+import android.support.annotation.NonNull;
 import com.google.gson.JsonObject;
 import com.unisound.ant.device.bean.ActionStatus;
 import com.unisound.ant.device.bean.AudioListResult;

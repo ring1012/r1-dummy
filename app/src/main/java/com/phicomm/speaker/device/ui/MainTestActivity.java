@@ -5,69 +5,75 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 import com.phicomm.speaker.device.R;
-import com.phicomm.speaker.device.R2;
 import com.unisound.ant.device.DeviceCenterHandler;
 
-public class MainTestActivity extends Activity {
-    @Bind({R2.id.bt_alter_mode})
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.Unbinder;
+
+public class MainTestActivity extends Activity implements View.OnClickListener {
+
+    @BindView(R.id.bt_alter_mode)
     Button btAlterMode;
-    @Bind({R2.id.bt_collect_music})
+
+    @BindView(R.id.bt_collect_music)
     Button btCollectMusic;
-    @Bind({R2.id.bt_enter_asr})
+
+    @BindView(R.id.bt_enter_asr)
     Button btEnterAsr;
-    @Bind({R2.id.bt_get_unread})
+
+    @BindView(R.id.bt_get_unread)
     Button btGetUnread;
-    @Bind({R2.id.bt_history})
+
+    @BindView(R.id.bt_history)
     Button btHistory;
-    @Bind({R2.id.bt_night_mode})
+
+    @BindView(R.id.bt_night_mode)
     Button btNightMode;
     private boolean isAlter = false;
 
-    /* access modifiers changed from: protected */
-    public void onCreate(Bundle savedInstanceState) {
+    private Unbinder unbind;
+
+    @Override // android.app.Activity
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_test_view);
-        ButterKnife.bind(this);
+        this.unbind = ButterKnife.bind(this);
     }
 
-    /* access modifiers changed from: protected */
-    public void onDestroy() {
+    @Override // android.app.Activity
+    protected void onDestroy() {
         super.onDestroy();
-        ButterKnife.unbind(this);
+        if(this.unbind != null) {
+            this.unbind.unbind();
+        }
     }
 
-    @OnClick({R2.id.bt_alter_mode, R2.id.bt_collect_music, R2.id.bt_enter_asr, R2.id.bt_night_mode, R2.id.bt_get_unread, R2.id.bt_history})
+    @OnClick({R.id.bt_alter_mode, R.id.bt_collect_music, R.id.bt_enter_asr, R.id.bt_night_mode, R.id.bt_get_unread, R.id.bt_history})
     public void onClick(View view) {
         switch (view.getId()) {
-            case R2.id.bt_alter_mode:
+            case R.id.bt_alter_mode /* 2131361820 */:
                 changeAlterMode();
-                return;
-            case R2.id.bt_collect_music:
-            case R2.id.bt_enter_asr:
-            default:
-                return;
-            case R2.id.bt_night_mode:
+                break;
+            case R.id.bt_night_mode /* 2131361823 */:
                 DeviceCenterHandler.getButtonControler().enterNightMode();
-                return;
+                break;
         }
     }
 
     private void changeAlterMode() {
-        if (DeviceCenterHandler.getButtonControler() == null) {
-            return;
+        if (DeviceCenterHandler.getButtonControler() != null) {
+            if (this.isAlter) {
+                this.btAlterMode.setText("关闭警戒模式");
+                DeviceCenterHandler.getButtonControler().enterAlertMode(true);
+                this.isAlter = false;
+            } else {
+                this.btAlterMode.setText("打开警戒模式");
+                DeviceCenterHandler.getButtonControler().enterAlertMode(false);
+                this.isAlter = true;
+            }
         }
-        if (this.isAlter) {
-            this.btAlterMode.setText("关闭警戒模式");
-            DeviceCenterHandler.getButtonControler().enterAlertMode(true);
-            this.isAlter = false;
-            return;
-        }
-        this.btAlterMode.setText("打开警戒模式");
-        DeviceCenterHandler.getButtonControler().enterAlertMode(false);
-        this.isAlter = true;
     }
 }

@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Build;
-import androidx.annotation.NonNull;
+import android.support.annotation.NonNull;
 import com.phicomm.speaker.device.R;
 import com.unisound.vui.engine.ANTHandlerContext;
 import com.unisound.vui.handler.SimpleUserEventInboundHandler;

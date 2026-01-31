@@ -6,7 +6,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.os.Process;
-import androidx.annotation.Nullable;
+import android.support.annotation.Nullable;
 import com.phicomm.speaker.device.R;
 import com.phicomm.speaker.device.ui.MainActivity;
 import com.unisound.vui.common.config.ANTConfigPreference;

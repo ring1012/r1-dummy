@@ -32,10 +32,10 @@
     <public type="drawable" name="exo_controls_previous" id="0x7f020004" />
     <public type="drawable" name="exo_controls_rewind" id="0x7f020005" />
     <public type="drawable" name="exo_edit_mode_logo" id="0x7f020006" />
-    <public type="drawable" name="ic_launcher_no_bg" id="0x7f020008" />
-    <public type="drawable" name="memo_notification" id="0x7f02000a" />
     <public type="drawable" name="ic_launcher" id="0x7f020007" />
+    <public type="drawable" name="ic_launcher_no_bg" id="0x7f020008" />
     <public type="drawable" name="im_start" id="0x7f020009" />
+    <public type="drawable" name="memo_notification" id="0x7f02000a" />
     <public type="layout" name="activity_main" id="0x7f030000" />
     <public type="layout" name="exo_playback_control_view" id="0x7f030001" />
     <public type="layout" name="exo_simple_player_view" id="0x7f030002" />
@@ -217,9 +217,9 @@
     <public type="style" name="ExoMediaButton.Play" id="0x7f060004" />
     <public type="style" name="ExoMediaButton.Previous" id="0x7f060005" />
     <public type="style" name="ExoMediaButton.Rewind" id="0x7f060006" />
+    <public type="dimen" name="activity_horizontal_margin" id="0x7f070000" />
     <public type="dimen" name="exo_media_button_height" id="0x7f070001" />
     <public type="dimen" name="exo_media_button_width" id="0x7f070002" />
-    <public type="dimen" name="activity_horizontal_margin" id="0x7f070000" />
     <public type="array" name="competition_words" id="0x7f080000" />
     <public type="array" name="default_wakeup_words" id="0x7f080001" />
     <public type="array" name="memo_time_day_nlu" id="0x7f080002" />

@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.Message;
 import android.text.TextUtils;
 import android.util.SparseArray;
-import androidx.annotation.NonNull;
+import android.support.annotation.NonNull;
 import com.google.gson.JsonObject;
 import com.phicomm.speaker.device.R;
 import com.phicomm.speaker.device.custom.ipc.PhicommLightController;

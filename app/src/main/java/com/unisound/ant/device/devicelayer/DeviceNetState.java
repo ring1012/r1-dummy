@@ -1,6 +1,6 @@
 package com.unisound.ant.device.devicelayer;
 
-import androidx.annotation.Nullable;
+import android.support.annotation.Nullable;
 import com.alibaba.fastjson.annotation.JSONField;
 import com.google.gson.annotations.SerializedName;
 

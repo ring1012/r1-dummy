@@ -1,7 +1,7 @@
 package com.unisound.vui.handler.session.memo.utils;
 
 import android.text.TextUtils;
-import androidx.annotation.NonNull;
+import android.support.annotation.NonNull;
 import cn.yunzhisheng.common.PinyinConverter;
 import com.unisound.ant.device.bean.AlarmReminder;
 import com.unisound.vui.handler.session.memo.entity.LocalMemo;

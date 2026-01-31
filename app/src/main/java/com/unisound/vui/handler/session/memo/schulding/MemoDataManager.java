@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Message;
 import android.util.Log;
-import androidx.annotation.NonNull;
+import android.support.annotation.NonNull;
 import com.unisound.vui.handler.session.memo.entity.LocalMemo;
 import com.unisound.vui.handler.session.memo.syncloud.MemoryStateMgr;
 import com.unisound.vui.handler.session.memo.utils.MemoConstants;

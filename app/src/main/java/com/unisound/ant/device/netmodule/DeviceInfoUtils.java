@@ -1,6 +1,6 @@
 package com.unisound.ant.device.netmodule;
 
-import androidx.annotation.WorkerThread;
+import android.support.annotation.WorkerThread;
 import com.unisound.ant.device.bean.RequestInfo;
 import com.unisound.vui.common.config.ANTConfigPreference;
 import com.unisound.vui.util.HttpUtils;

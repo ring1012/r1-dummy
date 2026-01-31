@@ -1,7 +1,7 @@
 package com.unisound.vui.util;
 
 
-import androidx.core.view.MotionEventCompat;
+import android.support.v4.view.MotionEventCompat;
 
 public class StringToPyUtil {
     private static int BEGIN = 45217;

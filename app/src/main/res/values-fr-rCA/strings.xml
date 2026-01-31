@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exo_controls_fastforward_description">Avance rapide</string>
+    <string name="exo_controls_next_description">Chanson suivante</string>
+    <string name="exo_controls_pause_description">Pause</string>
+    <string name="exo_controls_play_description">Lecture</string>
+    <string name="exo_controls_previous_description">Chanson précédente</string>
+    <string name="exo_controls_rewind_description">Reculer</string>
+    <string name="exo_controls_stop_description">Arrêter</string>
+</resources>
