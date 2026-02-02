@@ -1,6 +1,7 @@
 package com.unisound.vui.data.c.a;
 
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteStatement;
 import org.greenrobot.greendao.AbstractDao;
 import org.greenrobot.greendao.database.Database;
@@ -13,11 +14,11 @@ public class g extends AbstractDao<com.unisound.vui.data.entity.a.a.g, Long> {
         super(daoConfig, dVar);
     }
 
-    public static void a(Database database, boolean z) {
+    public static void a(Database database, boolean z) throws SQLException {
         database.execSQL("CREATE TABLE " + (z ? "IF NOT EXISTS " : "") + "\"ORIGIN_PUSH_TYPE\" (\"_id\" INTEGER PRIMARY KEY ,\"PUSH_BASE_INFO_ID\" TEXT,\"PUSH_TYPE\" TEXT);");
     }
 
-    public static void b(Database database, boolean z) {
+    public static void b(Database database, boolean z) throws SQLException {
         database.execSQL("DROP TABLE " + (z ? "IF EXISTS " : "") + "\"ORIGIN_PUSH_TYPE\"");
     }
 

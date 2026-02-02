@@ -15,7 +15,7 @@ public class PinYin4j {
     public static String converterToSpell(String chines) {
         StringBuffer stringBuffer = new StringBuffer();
         char[] charArray = chines.toCharArray();
-        a.a.a.a.b bVar = new a.a.a.a.b();
+        a.a.first.a2.b bVar = new a.a.first.a2.b();
         bVar.a(a.a.a.a.a.b);
         bVar.a(a.a.a.a.c.b);
         for (int i = 0; i < charArray.length; i++) {
@@ -30,7 +30,7 @@ public class PinYin4j {
                             }
                         }
                     }
-                } catch (a.a.a.a.a.a e) {
+                } catch (a.a.first.a2.a1.a e) {
                     e.printStackTrace();
                 }
             } else {

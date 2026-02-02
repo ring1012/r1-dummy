@@ -289,7 +289,7 @@ public class a {
         }
     }
 
-    public void a(Message message) {
+    public void a(Message message) throws RemoteException {
         if (message == null || message.replyTo == null) {
             return;
         }
@@ -311,13 +311,13 @@ public class a {
         c(new com.baidu.location.c(str));
     }
 
-    public void b() {
+    public void b() throws RemoteException {
         this.e.clear();
         this.g = null;
         e();
     }
 
-    public void b(Message message) {
+    public void b(Message message) throws RemoteException {
         C0005a c0005aA = a(message.replyTo);
         if (c0005aA != null) {
             this.e.remove(c0005aA);
@@ -419,7 +419,7 @@ public class a {
         a(cVar);
     }
 
-    public boolean c(Message message) {
+    public boolean c(Message message) throws RemoteException {
         boolean z = true;
         C0005a c0005aA = a(message.replyTo);
         if (c0005aA == null) {

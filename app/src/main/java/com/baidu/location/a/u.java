@@ -41,7 +41,7 @@ public class u {
     private static Location v = null;
     private static Location w = null;
     private static Location x = null;
-    private static com.baidu.location.b.f y = null;
+    private static com.baidu.location.bfold.f y = null;
     private static u A = null;
 
     private class a extends com.baidu.location.d.e {
@@ -440,7 +440,7 @@ public class u {
         }
     }
 
-    public static void a(com.baidu.location.b.a aVar, com.baidu.location.b.f fVar, Location location, String str) {
+    public static void a(com.baidu.location.bfold.a aVar, com.baidu.location.bfold.f fVar, Location location, String str) {
         String strA;
         if ((com.baidu.location.d.j.u == 3 && !a(location, fVar) && !a(location, false)) || aVar == null || aVar.c()) {
             return;
@@ -490,7 +490,7 @@ public class u {
         } else if (com.baidu.location.b.b.a().d()) {
             str = "&cfr=2" + str;
         }
-        com.baidu.location.b.f fVar2 = a(location, fVar) ? fVar : null;
+        com.baidu.location.bfold.f fVar2 = a(location, fVar) ? fVar : null;
         if ((aVar == null && fVar2 == null) || (strA = com.baidu.location.d.j.a(aVar, fVar2, location, str, 3)) == null) {
             return;
         }
@@ -543,7 +543,7 @@ public class u {
         return ((double) location.distanceTo(v)) > ((dDistanceTo * ((double) com.baidu.location.d.j.S)) + ((((double) com.baidu.location.d.j.R) * dDistanceTo) * dDistanceTo)) + ((double) com.baidu.location.d.j.T);
     }
 
-    private static boolean a(Location location, com.baidu.location.b.f fVar) {
+    private static boolean a(Location location, com.baidu.location.bfold.f fVar) {
         if (location == null || fVar == null || fVar.f95a == null || fVar.f95a.isEmpty() || fVar.b(y)) {
             return false;
         }
@@ -673,7 +673,7 @@ public class u {
         b(str);
     }
 
-    public static void e() {
+    public static void e() throws IOException {
         l = 0;
         a(1, false);
         a(2, false);

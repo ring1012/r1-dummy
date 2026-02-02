@@ -104,8 +104,8 @@ public class h {
     }
 
     private String a(boolean z) {
-        com.baidu.location.b.a aVarF = com.baidu.location.b.b.a().f();
-        com.baidu.location.b.f fVarO = com.baidu.location.b.g.a().o();
+        com.baidu.location.bfold.a aVarF = com.baidu.location.b.b.a().f();
+        com.baidu.location.bfold.f fVarO = com.baidu.location.b.g.a().o();
         StringBuffer stringBuffer = new StringBuffer(1024);
         if (aVarF != null && aVarF.b()) {
             stringBuffer.append(aVarF.g());

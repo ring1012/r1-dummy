@@ -242,7 +242,7 @@ public class g {
         }
     }
 
-    public static String b() {
+    public static String b() throws IOException {
         if (c != null && c.exists()) {
             try {
                 RandomAccessFile randomAccessFile = new RandomAccessFile(c, "rw");

@@ -16,8 +16,8 @@ public abstract class i {
     public static String c = null;
 
     /* renamed from: a, reason: collision with root package name */
-    public com.baidu.location.b.f f69a = null;
-    public com.baidu.location.b.a b = null;
+    public com.baidu.location.bfold.f f69a = null;
+    public com.baidu.location.bfold.a b = null;
     private boolean e = true;
     private boolean f = true;
     private boolean g = false;

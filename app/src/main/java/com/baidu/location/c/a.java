@@ -11,6 +11,7 @@ import android.os.Looper;
 import android.os.Message;
 import android.os.Messenger;
 import android.os.Process;
+import android.os.RemoteException;
 import android.support.v4.view.MotionEventCompat;
 import android.util.Log;
 import com.baidu.location.a.h;
@@ -20,12 +21,10 @@ import com.baidu.location.a.l;
 import com.baidu.location.a.n;
 import com.baidu.location.a.t;
 import com.baidu.location.a.u;
-import com.baidu.location.b.b;
-import com.baidu.location.b.d;
-import com.baidu.location.b.g;
+import com.baidu.location.bfold.g;
 import com.baidu.location.e;
-import com.baidu.location.f;
 import com.unisound.client.SpeechConstants;
+import java.io.IOException;
 
 /* loaded from: classes.dex */
 public class a extends Service implements e {
@@ -45,7 +44,7 @@ public class a extends Service implements e {
         }
 
         @Override // android.os.Handler
-        public void handleMessage(Message message) {
+        public void handleMessage(Message message) throws RemoteException, IOException {
             if (f.f) {
                 switch (message.what) {
                     case 11:
@@ -93,7 +92,7 @@ public class a extends Service implements e {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void a(Message message) {
+    public void a(Message message) throws RemoteException {
         Log.d("baidu_location_service", "baidu location service register ...");
         com.baidu.location.a.a.a().a(message);
         n.b().c();
@@ -112,12 +111,12 @@ public class a extends Service implements e {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void b(Message message) {
+    public void b(Message message) throws RemoteException {
         com.baidu.location.a.a.a().b(message);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void c() {
+    public void c() throws IOException, RemoteException {
         g.a().d();
         d.a().e();
         b.a().c();
@@ -135,7 +134,7 @@ public class a extends Service implements e {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public void c(Message message) {
+    public void c(Message message) throws RemoteException {
         com.baidu.location.a.a.a().c(message);
     }
 
@@ -180,7 +179,7 @@ public class a extends Service implements e {
     }
 
     @Override // android.app.Service, com.baidu.location.e
-    public void onDestroy() {
+    public void onDestroy() throws IOException, RemoteException {
         try {
             f99a.sendEmptyMessage(1);
         } catch (Exception e) {

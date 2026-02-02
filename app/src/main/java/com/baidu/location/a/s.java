@@ -7,7 +7,7 @@ public class s {
 
     /* renamed from: a, reason: collision with root package name */
     private static long f82a;
-    private static com.baidu.location.b.a b;
+    private static com.baidu.location.bfold.a b;
     private static Location c;
     private static String d;
 
@@ -23,7 +23,7 @@ public class s {
         c = location;
     }
 
-    public static void a(com.baidu.location.b.a aVar) {
+    public static void a(com.baidu.location.bfold.a aVar) {
         b = aVar;
     }
 
@@ -35,7 +35,7 @@ public class s {
         return f82a;
     }
 
-    public static com.baidu.location.b.a c() {
+    public static com.baidu.location.bfold.a c() {
         return b;
     }
 

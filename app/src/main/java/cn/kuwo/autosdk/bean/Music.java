@@ -329,7 +329,7 @@ public class Music implements Serializable, Cloneable {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct code enable 'Show inconsistent code' option in preferences
     */
-    public int parseResourceStringFromQuku(java.lang.String r13) throws java.lang.NumberFormatException {
+    public int parseResourceStringFromQuku(java.lang.String r13) {
         /*
             r12 = this;
             r11 = 1149239296(0x44800000, float:1024.0)

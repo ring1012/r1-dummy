@@ -53,7 +53,7 @@ public final class FileHelper {
         }
     }
 
-    public static boolean copyDirectoryFromAssets(Context context, String srcDir, File destDir) throws IOException {
+    public static boolean copyDirectoryFromAssets(Context context, String srcDir, File destDir)  {
         if (context == null) {
             throw new NullPointerException("context");
         }
@@ -329,75 +329,32 @@ public final class FileHelper {
     /* JADX WARN: Type inference failed for: r2v3 */
     /* JADX WARN: Type inference failed for: r2v5 */
     /* JADX WARN: Type inference failed for: r2v9 */
-    private static byte[] readByteArrFromFile(File file) throws Throwable {
-        BufferedInputStream bufferedInputStream;
-        Object obj;
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream((int) file.length());
-        ?? r2 = 0;
-        BufferedInputStream bufferedInputStream2 = null;
+    private static byte[] readByteArrFromFile(File file)  {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream((int) file.length());
+        BufferedInputStream bis = null;
+
         try {
-        } catch (Throwable th) {
-            th = th;
-        }
-        try {
-            try {
-                bufferedInputStream = new BufferedInputStream(new FileInputStream(file));
-            } catch (FileNotFoundException e) {
-                e = e;
-                bufferedInputStream = null;
-            } catch (IOException e2) {
-                e = e2;
+            bis = new BufferedInputStream(new FileInputStream(file));
+            byte[] buffer = new byte[1024];
+            int read;
+            while ((read = bis.read(buffer, 0, buffer.length)) != -1) {
+                baos.write(buffer, 0, read);
             }
-            try {
-                byte[] bArr = new byte[1024];
-                while (true) {
-                    int i = bufferedInputStream.read(bArr, 0, 1024);
-                    if (i != -1) {
-                        byteArrayOutputStream.write(bArr, 0, i);
-                    } else {
-                        try {
-                            break;
-                        } catch (IOException e3) {
-                            e3.printStackTrace();
-                            r2 = bArr;
-                        }
-                    }
-                }
-                bufferedInputStream.close();
-                r2 = bArr;
-            } catch (FileNotFoundException e4) {
-                e = e4;
-                e.printStackTrace();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (bis != null) {
                 try {
-                    bufferedInputStream.close();
-                } catch (IOException e5) {
-                    e5.printStackTrace();
+                    bis.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
-                return byteArrayOutputStream.toByteArray();
-            } catch (IOException e6) {
-                e = e6;
-                bufferedInputStream2 = bufferedInputStream;
-                e.printStackTrace();
-                try {
-                    bufferedInputStream2.close();
-                    r2 = bufferedInputStream2;
-                } catch (IOException e7) {
-                    e7.printStackTrace();
-                    r2 = bufferedInputStream2;
-                }
-                return byteArrayOutputStream.toByteArray();
             }
-            return byteArrayOutputStream.toByteArray();
-        } catch (Throwable th2) {
-            th = th2;
-            r2 = obj;
-            try {
-                r2.close();
-            } catch (IOException e8) {
-                e8.printStackTrace();
-            }
-            throw th;
         }
+
+        return baos.toByteArray();
     }
 
     public static byte[] readByteArrFromPath(String fileName) {

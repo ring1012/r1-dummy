@@ -50,7 +50,7 @@ public class a {
     static final int w = 24;
     static final int x = 25;
     public s c;
-    public c y = new c(this, 5);
+    public c y1 = new c(this, 5);
     public c z = new c(this, 6);
     public c A = new c(this, 7);
     public d B = new d(this, 8);
@@ -74,7 +74,7 @@ public class a {
     boolean Y = false;
     boolean Z = false;
     int aa = 16000;
-    int ab = 3000;
+    int ab1 = 3000;
     int ac = 300;
     int ad = 16000;
     int ae = 38000;
@@ -113,12 +113,12 @@ public class a {
     private int aY = 300;
     public int ao = 1;
     public int ap = 1;
-    public boolean aq = false;
+    public boolean aq1 = false;
     public boolean ar = false;
     public boolean as = false;
     private int aZ = 0;
     private int bb = ba;
-    public Map<String, String> at = new HashMap();
+    public Map<String, String> at1 = new HashMap();
     boolean au = false;
     private boolean bc = false;
     private boolean bd = false;
@@ -133,7 +133,7 @@ public class a {
         this.N.a(0);
         this.O.a(-0.25f);
         try {
-            this.c = new s((AudioManager) context.getSystemService("audio"));
+            this.c = new s((AudioManager) context.getSystemService(Context.AUDIO_SERVICE));
         } catch (Exception e2) {
             y.c("setfourMicUtil error");
         }
@@ -290,7 +290,7 @@ public class a {
                     if (list != null) {
                         for (String str2 : list) {
                             if (str2 != null) {
-                                this.at.put(str2, str);
+                                this.at1.put(str2, str);
                                 arrayList2.add(str2);
                             }
                         }
@@ -303,6 +303,7 @@ public class a {
                 return arrayList;
             }
         } catch (Exception e3) {
+            return arrayList;
         }
     }
 
@@ -315,7 +316,7 @@ public class a {
     }
 
     public void a(int i2, int i3) {
-        this.ab = i2;
+        this.ab1 = i2;
         if (i3 > 300) {
             this.aI = i3 + ab.l;
             i3 = 300;
@@ -348,7 +349,7 @@ public class a {
     }
 
     public boolean aa() {
-        return this.aq;
+        return this.aq1;
     }
 
     public boolean ab() {
@@ -375,7 +376,7 @@ public class a {
 
     public void af() {
         if (this.c.a() || this.aC) {
-            this.y.a(5000000.0f);
+            this.y1.a(5000000.0f);
             this.J.a(0.5f);
             this.F.a(80);
             this.K.a(1);
@@ -504,7 +505,7 @@ public class a {
     }
 
     public void d(int i2) {
-        this.ab = i2;
+        this.ab1 = i2;
     }
 
     public void d(long j2) {
@@ -556,7 +557,7 @@ public class a {
     }
 
     public String f(String str) {
-        return this.at.containsKey(str) ? this.at.get(str) : "";
+        return this.at1.containsKey(str) ? this.at1.get(str) : "";
     }
 
     public void f(int i2) {
@@ -618,7 +619,7 @@ public class a {
         return this.aI;
     }
 
-    public long i(long j2) {
+    public long i1(long j2) {
         return (this.aa / 1000) * j2 * 2;
     }
 
@@ -695,7 +696,7 @@ public class a {
     }
 
     public void o() {
-        this.y.a();
+        this.y1.a();
         this.z.a();
         this.A.a();
         this.B.a();
@@ -736,7 +737,7 @@ public class a {
         this.J.a(0.6f);
         this.K.a(1);
         this.L.a(3);
-        this.y.a(2.0E8f);
+        this.y1.a(2.0E8f);
         this.G.a(80.0f);
         this.D.a(1000000.0f);
         this.M.a(1);
@@ -769,7 +770,7 @@ public class a {
     }
 
     public void q(boolean z) {
-        this.aq = z;
+        this.aq1 = z;
     }
 
     public void r() {
@@ -821,7 +822,7 @@ public class a {
     }
 
     public int u() {
-        return this.ab;
+        return this.ab1;
     }
 
     public void u(int i2) {
@@ -881,7 +882,7 @@ public class a {
     }
 
     public void y(int i2) {
-        long jI = i(i2);
+        long jI = i1(i2);
         if (jI > 0) {
             this.ay = jI;
         }
@@ -896,7 +897,7 @@ public class a {
     }
 
     public void z(int i2) {
-        long jI = i(i2);
+        long jI = i1(i2);
         if (jI > 0) {
             this.az = jI;
         }

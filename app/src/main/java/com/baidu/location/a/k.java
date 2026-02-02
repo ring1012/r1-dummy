@@ -5,7 +5,7 @@ import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
 import android.os.SystemClock;
-import com.baidu.location.a.i;
+
 import com.google.android.exoplayer2.source.chunk.ChunkedTrackBlacklistUtil;
 import java.util.List;
 
@@ -21,10 +21,10 @@ public class k extends i {
     private String k = null;
     private com.baidu.location.c l = null;
     private com.baidu.location.c m = null;
-    private com.baidu.location.b.f n = null;
-    private com.baidu.location.b.a o = null;
-    private com.baidu.location.b.f p = null;
-    private com.baidu.location.b.a q = null;
+    private com.baidu.location.bfold.f n = null;
+    private com.baidu.location.bfold.a o = null;
+    private com.baidu.location.bfold.f p = null;
+    private com.baidu.location.bfold.a q = null;
     private boolean r = true;
     private volatile boolean s = false;
     private boolean t = false;
@@ -85,7 +85,7 @@ public class k extends i {
         this.f = new i.b();
     }
 
-    private boolean a(com.baidu.location.b.a aVar) {
+    private boolean a(com.baidu.location.bfold.a aVar) {
         this.b = com.baidu.location.b.b.a().f();
         if (this.b == aVar) {
             return false;
@@ -93,7 +93,7 @@ public class k extends i {
         return this.b == null || aVar == null || !aVar.a(this.b);
     }
 
-    private boolean a(com.baidu.location.b.f fVar) {
+    private boolean a(com.baidu.location.bfold.f fVar) {
         this.f69a = com.baidu.location.b.g.a().o();
         if (fVar == this.f69a) {
             return false;

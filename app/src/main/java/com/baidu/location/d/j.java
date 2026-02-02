@@ -13,12 +13,12 @@ import com.unisound.client.SpeechConstants;
 import com.unisound.vui.priority.PriorityMap;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.math.BigInteger;
 import java.net.Inet4Address;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
-import java.net.SocketException;
 import java.security.InvalidKeyException;
 import java.security.KeyFactory;
 import java.security.MessageDigest;
@@ -151,7 +151,7 @@ public class j {
         }
     }
 
-    public static Object a(Object obj, String str, Object... objArr) throws NoSuchMethodException, SecurityException {
+    public static Object a(Object obj, String str, Object... objArr) {
         Class<?> cls = obj.getClass();
         Class<?>[] clsArr = new Class[objArr.length];
         int length = objArr.length;
@@ -174,11 +174,11 @@ public class j {
         return String.format(Locale.CHINA, "%d-%02d-%02d %02d:%02d:%02d", Integer.valueOf(calendar.get(1)), Integer.valueOf(calendar.get(2) + 1), Integer.valueOf(i2), Integer.valueOf(calendar.get(11)), Integer.valueOf(calendar.get(12)), Integer.valueOf(calendar.get(13)));
     }
 
-    public static String a(com.baidu.location.b.a aVar, com.baidu.location.b.f fVar, Location location, String str, int i2) {
+    public static String a(com.baidu.location.bfold.a aVar, com.baidu.location.bfold.f fVar, Location location, String str, int i2) {
         return a(aVar, fVar, location, str, i2, false);
     }
 
-    public static String a(com.baidu.location.b.a aVar, com.baidu.location.b.f fVar, Location location, String str, int i2, boolean z2) {
+    public static String a(com.baidu.location.bfold.a aVar, com.baidu.location.bfold.f fVar, Location location, String str, int i2, boolean z2) {
         String strA;
         String strB;
         StringBuffer stringBuffer = new StringBuffer(1024);
@@ -233,7 +233,7 @@ public class j {
         return string;
     }
 
-    public static String a(File file, String str) {
+    public static String a(File file, String str) throws NoSuchAlgorithmException, IOException {
         if (!file.isFile()) {
             return null;
         }
@@ -285,7 +285,7 @@ public class j {
         return !z2 ? 0 : 1;
     }
 
-    public static int b(Object obj, String str, Object... objArr) throws NoSuchMethodException, SecurityException {
+    public static int b(Object obj, String str, Object... objArr) {
         Class<?> cls = obj.getClass();
         Class<?>[] clsArr = new Class[objArr.length];
         int length = objArr.length;
@@ -302,7 +302,7 @@ public class j {
         return ((Integer) declaredMethod.invoke(obj, objArr)).intValue();
     }
 
-    public static String b() throws SocketException {
+    public static String b() {
         try {
             Enumeration<NetworkInterface> networkInterfaces = NetworkInterface.getNetworkInterfaces();
             while (networkInterfaces.hasMoreElements()) {

@@ -1,9 +1,10 @@
 package com.unisound.sdk;
 
 import android.content.Context;
+import cn.yunzhisheng.asr.a;
 
 /* loaded from: classes.dex */
-public class as extends cn.yunzhisheng.asr.a {
+public class as extends  a {
     public static final String aB = "en";
     public static final String aC = "co";
     public static final String aD = "cn";

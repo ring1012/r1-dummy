@@ -40,7 +40,7 @@ public class j {
         }
     }
 
-    public Music a(JSONObject jSONObject) throws NumberFormatException {
+    public Music a(JSONObject jSONObject) {
         if (jSONObject == null) {
             return null;
         }
@@ -130,7 +130,7 @@ public class j {
         return null;
     }
 
-    public List a(byte[] bArr) throws JSONException, IOException, NumberFormatException {
+    public List a(byte[] bArr) throws JSONException, IOException {
         if (bArr == null) {
             return null;
         }

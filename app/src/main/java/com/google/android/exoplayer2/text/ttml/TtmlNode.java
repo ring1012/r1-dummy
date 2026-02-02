@@ -13,7 +13,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 
 /* loaded from: classes.dex */
-final class TtmlNode {
+public final class TtmlNode {
     public static final String ANONYMOUS_REGION_ID = "";
     public static final String ATTR_ID = "id";
     public static final String ATTR_TTS_BACKGROUND_COLOR = "backgroundColor";

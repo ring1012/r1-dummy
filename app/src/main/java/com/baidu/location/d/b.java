@@ -5,7 +5,6 @@ import android.os.Build;
 import android.telephony.TelephonyManager;
 import cn.yunzhisheng.common.PinyinConverter;
 import com.baidu.location.a.l;
-import java.net.SocketException;
 import java.util.Locale;
 
 /* loaded from: classes.dex */
@@ -39,7 +38,7 @@ public class b {
         return a(z, (String) null);
     }
 
-    public String a(boolean z, String str) throws SocketException {
+    public String a(boolean z, String str) {
         StringBuffer stringBuffer = new StringBuffer(256);
         stringBuffer.append("&sdk=");
         stringBuffer.append(7.32f);
