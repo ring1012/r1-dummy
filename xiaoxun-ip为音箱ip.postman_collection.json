@@ -10,7 +10,7 @@
       "name": "AI-docker容器",
       "item": [
         {
-          "name": "启用AI",
+          "name": "启用AI-指定容器地址",
           "request": {
             "method": "POST",
             "header": [
@@ -22,7 +22,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"what\": 65536,\r\n    \"arg1\": 2,\r\n    \"arg2\": 1\r\n}",
+              "raw": "{\r\n    \"what\": 65536,\r\n    \"arg1\": 2,\r\n    \"arg2\": 1,\r\n    \"obj\":\"192.168.2.1:18888\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -61,44 +61,6 @@
             "body": {
               "mode": "raw",
               "raw": "{\r\n    \"what\": 65536,\r\n    \"arg1\": 2,\r\n    \"arg2\": 0\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "http://192.168.2.105:18888/api/message",
-              "protocol": "http",
-              "host": [
-                "192",
-                "168",
-                "2",
-                "105"
-              ],
-              "port": "18888",
-              "path": [
-                "api",
-                "message"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "指定容器地址",
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/octet-stream",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n    \"what\": 65536,\r\n    \"arg1\": 1,\r\n    \"arg2\": 0,\r\n    \"obj\": \"192.168.2.1:18888\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
