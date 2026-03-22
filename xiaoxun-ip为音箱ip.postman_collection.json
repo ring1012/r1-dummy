@@ -86,7 +86,7 @@
           "response": []
         },
         {
-          "name": "指定容器地址-重启音箱生效",
+          "name": "指定容器地址",
           "request": {
             "method": "POST",
             "header": [
@@ -98,7 +98,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"what\": 65536,\r\n    \"arg1\": 1,\r\n    \"arg2\": 0,\r\n    \"obj\": \"{你的docker容器地址}\"\r\n}",
+              "raw": "{\r\n    \"what\": 65536,\r\n    \"arg1\": 1,\r\n    \"arg2\": 0,\r\n    \"obj\": \"192.168.2.1:18888\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
