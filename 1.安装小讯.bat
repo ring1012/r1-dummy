@@ -307,6 +307,7 @@ echo 提示：如当前为IP连接方式，上传安装包速度可能较慢，请耐心等待。。。
 
 echo 开始上传%apk%。。。
 adb %type% shell /system/bin/pm uninstall com.phicomm.speaker.device > nul
+adb %type% shell /system/bin/pm uninstall com.phicomm.speaker.player > nul
 adb %type% push tmp.apk /data/local/tmp/
 if %errorlevel%==1 goto upload_fail
 del tmp.apk
